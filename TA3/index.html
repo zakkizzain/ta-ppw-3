@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Company Landing Page - ZakiCorp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+    <header class="shadow-md">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-4">
+            <div class="text-2xl font-bold">ZakiCorp</div>
+            <ul class="hidden md:flex space-x-6 font-medium">
+                <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+                <li><a href="#features" class="hover:text-blue-600">Features</a></li>
+                <li><a href="#about" class="hover:text-blue-600">About</a></li>
+                <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+            </ul>
+            <button class="md:hidden text-xl" id="menu-btn">☰</button>
+        </nav>
+        <ul id="mobile-menu" class="hidden flex-col space-y-4 bg-white shadow-md p-4 md:hidden">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section id="home" class="text-center py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Innovating the Future with Technology</h1>
+            <p class="text-lg md:text-xl mb-6">Kami membangun sistem cerdas yang mentransformasi bisnis di seluruh dunia.</p>
+            <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700">Mulai Sekarang</a>
+        </div>
+    </section>
+
+    <section id="features" class="py-16 container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-10">Fitur Unggulan</h2>
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <a href="features-performance.html" class="block">
+                <div class="p-8 shadow-lg rounded-2xl bg-white text-center hover:shadow-xl transition">
+                    <div class="text-5xl mb-4">⚡</div>
+                    <h2 class="text-2xl font-semibold mb-3">High Performance Systems</h2>
+                    <p class="text-gray-600">
+                        Kami membangun aplikasi berkinerja tinggi yang dirancang untuk skalabilitas, pemrosesan cepat, dan penanganan beban kerja tingkat global.
+                    </p>
+                </div>
+            </a>
+
+            <a href="features-security.html" class="block">
+                <div class="p-8 shadow-lg rounded-2xl bg-white text-center hover:shadow-xl transition">
+                    <div class="text-5xl mb-4">🔒</div>
+                    <h2 class="text-2xl font-semibold mb-3">Enterprise-Grade Security</h2>
+                    <p class="text-gray-600">
+                        Enkripsi data canggih, model zero-trust, dan autentikasi aman untuk melindungi infrastruktur bisnis Anda dan selalu terpercaya.
+                    </p>
+                </div>
+            </a>
+
+            <a href="features-ai.html" class="block">
+                <div class="p-8 shadow-lg rounded-2xl bg-white text-center hover:shadow-xl transition">
+                    <div class="text-5xl mb-4">☁️</div>
+                    <h2 class="text-2xl font-semibold mb-3">AI-Powered Cloud Platform</h2>
+                    <p class="text-gray-600">
+                        Layanan cloud bertenaga AI yang kuat memungkinkan otomatisasi, analitik prediktif, dan implementasi real-time yang mulus.
+                    </p>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Tentang Kami</h2>
+            <p class="max-w-3xl mx-auto text-lg mb-4">
+                ZakiCorp adalah pemimpin inovasi dalam rekayasa perangkat lunak, dengan fokus mendalam pada solusi Kecerdasan Buatan (AI), platform cloud yang aman, dan aplikasi enterprise yang skalabel. Misi kami adalah memberdayakan bisnis di seluruh dunia untuk tidak
+                hanya bersaing, tetapi juga memimpin di era digital.
+            </p>
+            <p class="max-w-3xl mx-auto text-lg">
+                Sejak didirikan, ZakiCorp telah mendorong batasan teknologi, membantu klien kami mencapai efisiensi operasional yang belum pernah ada sebelumnya dan membuka peluang pertumbuhan baru. Kami adalah mitra Anda dalam perjalanan menuju digitalisasi dan keunggulan
+                teknologi jangka panjang.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Hubungi Kami</h2>
+            <form class="max-w-xl mx-auto space-y-4 bg-white p-6 shadow rounded-lg">
+                <input type="text" class="w-full p-3 border rounded" placeholder="Nama Anda" required />
+                <input type="email" class="w-full p-3 border rounded" placeholder="Email Anda" required />
+                <textarea class="w-full p-3 border rounded" rows="4" placeholder="Pesan Anda" required></textarea>
+                <button class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 font-medium">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-6 bg-gray-900 text-white text-center">
+        <p>&copy; 2025 ZakiCorp. All Rights Reserved.</p>
+        <div class="mt-2 space-x-4">
+            <a href="https://instagram.com/zakicorp" target="_blank" class="hover:text-blue-400">Instagram</a>
+            <a href="https://wa.me/628123456789" target="_blank" class="hover:text-blue-400">WhatsApp</a>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
